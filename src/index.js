@@ -1,7 +1,7 @@
 import Biscoint from 'biscoint-api-node';
 import _ from 'lodash';
 import player from 'play-sound';
-import config from './config.json';
+import config from './config.js';
 
 // read the configurations
 let {
@@ -246,6 +246,5 @@ async function start() {
 const express = require('express')
 const PORT = process.env.PORT || 5000
 
-express()
-   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
-  .start().catch(e => handleMessage(JSON.stringify(e), 'error'));
+express().listen(PORT, () => console.log(`Listening on ${ PORT }`));
+start().catch(e => handleMessage(JSON.stringify(e), 'error'));
