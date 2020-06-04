@@ -1,7 +1,7 @@
 import Biscoint from 'biscoint-api-node';
 import _ from 'lodash';
 import player from 'play-sound';
-import config from './config.js';
+import config from './config.json';
 
 // read the configurations
 let {
