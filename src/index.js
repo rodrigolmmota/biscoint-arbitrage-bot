@@ -235,6 +235,11 @@ const play = () => {
   }
 };
 
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+
 // performs initialization, checks and starts the trading cycles.
 async function start() {
   init();
@@ -243,4 +248,4 @@ async function start() {
   await startTrading();
 }
 
-start().listen(process.env.PORT, '0.0.0.0').catch(e => handleMessage(JSON.stringify(e), 'error'));
+start().catch(e => handleMessage(JSON.stringify(e), 'error'));
