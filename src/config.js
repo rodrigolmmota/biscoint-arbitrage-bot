@@ -8,7 +8,7 @@ const config = {
   amount: 2000,
   amountCurrency: 'BRL',
   initialBuy: true,
-  minProfitPercent: 0.02,
+  minProfitPercent: 0.01,
   // specify null to let the bot calculate the minimum allowed interval
   intervalSeconds: null,
   playSound: false,
