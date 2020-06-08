@@ -10,7 +10,7 @@ const config = {
   initialBuy: true,
   minProfitPercent: 0.01,
   // specify null to let the bot calculate the minimum allowed interval
-  intervalSeconds: null,
+  intervalSeconds: 1,
   playSound: false,
   simulation: false,
   executeMissedSecondLeg: true,
