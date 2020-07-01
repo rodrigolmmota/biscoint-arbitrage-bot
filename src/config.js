@@ -5,7 +5,7 @@ import _ from 'lodash';
 const config = {
   apiKey: '1042101d554993f0eadfa095a088dfa821fef8915c8f875ee74883c6e735d2b3',
   apiSecret: '31b2f54a55aa79a122d4966abf974a1dd4a6981cc6efcbbbc86ba2d061772aa3',
-  amount: 3000,
+  amount: 3117,
   amountCurrency: 'BRL',
   initialBuy: true,
   minProfitPercent: 0.01,
@@ -13,7 +13,7 @@ const config = {
   intervalSeconds: null,
   playSound: false,
   simulation: false,
-  executeMissedSecondLeg: true,
+  executeMissedSecondLeg: true
 };
 
 try {
